@@ -153,9 +153,9 @@ function get_ticker(exchange) {
                 js_request("https://www.coinexchange.io/api/v1/getmarketsummary?market_id=" + conf.special_ticker.CoinExchange, res => exdata.fillj(res["result"], "LastPrice", "BTCVolume", "BidPrice", "AskPrice", "Change"));
                 break;
             }
-            case "graviex": {
-                exdata.link = rg_replace("https://graviex.net/markets/{COIN}btc", true);
-                js_request("https://graviex.net:443//api/v2/tickers/{COIN}btc.json", res => exdata.fillj(res["ticker"], "last", "volbtc", "buy", "sell", "change"), true);
+            case "zolex": {
+                exdata.link = rg_replace("https://zolex.org/trading/{COIN}btc", true);
+                js_request("https://zolex.org:443//api/v2/tickers/{COIN}btc.json", res => exdata.fillj(res["ticker"], "last", "volbtc", "buy", "sell", "change"), true);
                 break;
             }
             case "escodex": {
