@@ -58,8 +58,7 @@
     "locked",
     "avgmnreward",
     "nextstage"
-  ]
-  
+  ],
   "monitor": {
     "enabled": true,
     "channel": "573037725033431060",
