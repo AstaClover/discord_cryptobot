@@ -36,7 +36,7 @@
       "coll": 1000,
       "mn": 3.2,
       "pow": 4.8
-    },
+    }
   ],
   "requests": {
     "blockcount": "erovium-cli getblockcount",
