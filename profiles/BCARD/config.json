@@ -20,56 +20,32 @@
   ],
   "stages": [
     {
-      "block": 130000,
-      "coll": 5000,
-      "mn": 70.08,
-      "pos": 2.92
+      "block": 401,
+      "coll": 1000,
+      "mn": 0,
+      "pow": 1
     },
     {
-      "block": 180000,
-      "coll": 10000,
-      "mn": 83.69,
-      "pos": 2.79
+      "block": 601,
+      "coll": 1000,
+      "mn": 0,
+      "pow": 4
     },
     {
-      "block": 240000,
-      "coll": 15000,
-      "mn": 101.69,
-      "pos": 3.39
+      "block": 801,
+      "coll": 1000,
+      "mn": 3.2,
+      "pow": 4.8
     },
-    {
-      "block": 300000,
-      "coll": 20000,
-      "mn": 110.69,
-      "pos": 3.69
-    },
-    {
-      "block": 400000,
-      "coll": 25000,
-      "mn": 83.69,
-      "pos": 2.79
-    },
-    {
-      "block": 500000,
-      "coll": 30000,
-      "mn": 56.69,
-      "pos": 1.89
-    },
-    {
-      "block": -1,
-      "coll": 30000,
-      "mn": 9.00,
-      "pos": 1.00
-    }
   ],
   "requests": {
-    "blockcount": "CARDbuyers-cli getblockcount",
-    "mncount": "CARDbuyers-cli masternode count",
-    "supply": "curl -s http://127.0.0.1:3001/ext/getmoneysupply",
-    "balance": "curl -s http://127.0.0.1:3001/ext/getaddress/",
-    "blockindex": "CARDbuyers-cli getblockhash ",
-    "blockhash": "CARDbuyers-cli getblock ",
-    "mnstat": "CARDbuyers-cli masternode list "
+    "blockcount": "erovium-cli getblockcount",
+    "mncount": "erovium-cli masternode count",
+    "supply": "curl -s http://explorer.erovium.us:3001/ext/getmoneysupply",
+    "balance": "curl -s http://explorer.erovium.us:3001/ext/getaddress/",
+    "blockindex": "erovium-cli getblockhash ",
+    "blockhash": "erovium-cli getblock ",
+    "mnstat": "erovium-cli masternode list "
   },
   "statorder": [
     "blockcount",
@@ -82,10 +58,11 @@
     "locked",
     "avgmnreward",
     "nextstage"
-  ],
+  ]
+  
   "monitor": {
     "enabled": true,
-    "channel": "531519255519428638",
+    "channel": "573037725033431060",
     "interval": 60
   },
   "hidenotsupported": false,
@@ -94,7 +71,7 @@
   "sourcecode": "https://github.com/neo3587/discord_cryptobot",
   "channel": [ "479496777700212746" ],
   "prefix": "!",
-  "coin": "BCARD",
-  "blocktime": 60,
-  "token": "NDkwNTM4NjY1NzY4OTEwODQ5.Dn66EQ.krDSiz630cqIS9Fuywa5BSdyMGI"
+  "coin": "EROVIUM",
+  "blocktime": 120,
+  "token": "NTczMDM3ODgwMTE3NjkwMzY4.XMlBIg.0GsXLKuTMfVQWSnK0hY6KKOv7C4"
 }
